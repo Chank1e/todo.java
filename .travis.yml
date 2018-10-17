@@ -1,0 +1,5 @@
+language: java
+before_install:
+- cd todo_gradle && chmod +x gradlew
+script:
+  - ./gradlew build
