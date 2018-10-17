@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Chank1e/todo.java.svg?branch=master)](https://travis-ci.org/Chank1e/todo.java)
+
 ### Todo app - Java
 
 ---
