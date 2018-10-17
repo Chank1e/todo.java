@@ -8,7 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cfecf55b-a270-4648-944e-11c64978ee3c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/todo_gradle/.gradle/" />
     <ignored path="$PROJECT_DIR$/todo_gradle/build/" />
@@ -67,7 +67,7 @@
           <entry key="gradlew" value="1" />
           <entry key="iml" value="2" />
           <entry key="java" value="39" />
-          <entry key="md" value="1" />
+          <entry key="md" value="2" />
           <entry key="mf" value="1" />
           <entry key="xml" value="6" />
           <entry key="yml" value="1" />
@@ -79,7 +79,7 @@
           <entry key="IDEA_MODULE" value="2" />
           <entry key="JAVA" value="38" />
           <entry key="Manifest" value="1" />
-          <entry key="Markdown" value="1" />
+          <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Scratch" value="1" />
           <entry key="XML" value="6" />
@@ -89,7 +89,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="4349" />
-          <entry key="md" value="939" />
+          <entry key="md" value="941" />
           <entry key="mf" value="4" />
           <entry key="yml" value="178" />
         </counts>
@@ -98,7 +98,7 @@
         <counts>
           <entry key="JAVA" value="4325" />
           <entry key="Manifest" value="4" />
-          <entry key="Markdown" value="921" />
+          <entry key="Markdown" value="923" />
           <entry key="Scratch" value="42" />
           <entry key="YAML" value="178" />
         </counts>
@@ -117,6 +117,21 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor>
+                <caret column="117" selection-start-column="117" selection-end-column="117" />
+                <folding>
+                  <element signature="imports" expanded="true" />
+                </folding>
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="104">
@@ -485,12 +500,12 @@
         <option value="$PROJECT_DIR$/ToDo/src/Instances/Task.java" />
         <option value="$PROJECT_DIR$/ToDo/src/Main.java" />
         <option value="$PROJECT_DIR$/ToDo/ToDo.iml" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/ToDo/src/Model/EventHandler.java" />
         <option value="$PROJECT_DIR$/ToDo/src/Model/TaskState.java" />
         <option value="$PROJECT_DIR$/ToDo/src/View/App.java" />
         <option value="$PROJECT_DIR$/todo_gradle/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/.travis.yml" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -547,7 +562,7 @@
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="param" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539770337262" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539770455751" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -678,18 +693,18 @@
       <workItem from="1539698177124" duration="218000" />
       <workItem from="1539698423946" duration="849000" />
       <workItem from="1539699438657" duration="471000" />
-      <workItem from="1539762208226" duration="6472000" />
+      <workItem from="1539762208226" duration="6857000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17187000" />
+    <option name="totallyTimeSpent" value="17572000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19189766" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19189766" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -707,7 +722,7 @@
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32893288" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32893288" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32893288" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32893288" />
       <window_info anchor="right" id="Gradle" />
@@ -794,19 +809,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
           <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="182">
-            <caret line="7" selection-start-line="7" selection-end-line="7" />
-            <folding>
-              <element signature="imports" expanded="true" />
-            </folding>
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -909,6 +911,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
           <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="117" selection-start-column="117" selection-end-column="117" />
+            <folding>
+              <element signature="imports" expanded="true" />
+            </folding>
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
