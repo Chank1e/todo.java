@@ -1,36 +1,26 @@
 package View;
 
-import Instances.Task;
-import Instances.TaskBoard;
-import Instances.TaskList;
-import Model.EventHandler;
+import Entities.Task;
+import Entities.TaskBoard;
+import Entities.TaskList;
 import Model.TaskState;
 
 import java.text.ParseException;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.function.Consumer;
 
-public class App {
+import Listeners.Listener;
+
+public class App extends Listener{
     private TaskState state = new TaskState();
-    private EventHandler eventHandler;
-    public void init() throws ParseException{
-        eventHandler = state.getEventHandler(); // Initialize event handler for created state
+
+    public void init(){
+        state.addEventListenet(this);
         this.mockState();
     }
 
-    private void mockState() throws ParseException {
+    private void mockState(){
         Map<String, Object> tmpState = new HashMap<>();
-
-        Consumer<Object> callback = new Consumer<Object>() {
-            @Override
-            public void accept(Object o) {
-                TaskBoard b = (TaskBoard)o;
-                System.out.println(b.getName());
-            }
-        };
-
-        eventHandler.addEventListener("board", callback); // Ставим коллбэк на обновление поля "board" в state
 
         TaskBoard board = new TaskBoard("BoardName");
 
@@ -46,5 +36,10 @@ public class App {
         tmpState.put("board", board);
 
         state.setState(tmpState); // Обновляем state. После обновления сработает коллбэк
+    }
+
+    @Override
+    public void update(){
+        System.out.println("Updated!");
     }
 }

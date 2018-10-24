@@ -1,4 +1,4 @@
-package Instances;
+package Entities;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -15,20 +15,20 @@ public class Task {
 
     private static String _defaultDateFormat = "dd-MM-yyyy";
 
-    public Task(String name, String description, String deadlineStr) throws ParseException{
+    public Task(String name, String description, String deadlineStr){
         this.name = name;
         this.description = description;
         this.setDeadline(deadlineStr);
-        this.generateUUID();
+        this.id = this.generateUUID();
     }
 
     public Task(){
         this.name = "";
         this.description = "";
-        this.generateUUID();
+        this.id = this.generateUUID();
     }
-    private void generateUUID(){
-        id = UUID.randomUUID();
+    private UUID generateUUID(){
+        return UUID.randomUUID();
     }
 
     public String getDescription() {
@@ -39,14 +39,19 @@ public class Task {
         return name;
     }
 
-    private void setDeadline(String deadline) throws ParseException {
+    private void setDeadline(String deadline) {
         SimpleDateFormat sdf = new SimpleDateFormat(_defaultDateFormat, Locale.getDefault());
-        Date parsedDeadline = sdf.parse(deadline);
+        Date parsedDeadline;
+        try {
+            parsedDeadline = sdf.parse(deadline);
+        } catch(ParseException e){
+            parsedDeadline = new Date();
+        }
         this.deadline = parsedDeadline;
     }
 
     public Date getDeadline() {
-        return deadline;
+        return new Date(deadline.getTime());
     }
 
     @Override

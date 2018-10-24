@@ -1,11 +1,11 @@
-package Instances;
+package Entities;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class TaskBoard {
     private String name;
-    private ArrayList<List> lists = new ArrayList<List>();
+    private ArrayList<TaskList> lists = new ArrayList<TaskList>();
 
     public TaskBoard(String name){
         this.name = name;
@@ -15,7 +15,7 @@ public class TaskBoard {
         return name;
     }
 
-    public void connectList(List list){
+    public void connectList(TaskList list){
         lists.add(list);
     }
 }
