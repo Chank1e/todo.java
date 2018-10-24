@@ -1,4 +1,4 @@
-package Instances;
+package Entities;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -17,16 +17,16 @@ public class TaskList {
 
     public TaskList(){
         this.name = "";
-        this.generateUUID();
+        this.id = this.generateUUID();
     }
 
     public TaskList(String name) {
         this.name = name;
-        this.generateUUID();
+        this.id = this.generateUUID();
     }
 
-    private void generateUUID(){
-        this.id = UUID.randomUUID();
+    private UUID generateUUID(){
+        return UUID.randomUUID();
     }
 
     public String getName() {
@@ -41,10 +41,17 @@ public class TaskList {
         return new ArrayList<Task>(tasks);
     }
 
-    public ArrayList<Task> getTasksInRange(String dateFromStr, String dateToStr) throws ParseException {
+    public ArrayList<Task> getTasksInRange(String dateFromStr, String dateToStr) {
         SimpleDateFormat sdf = new SimpleDateFormat(_defaultDateFormat, Locale.getDefault());
-        Date dateFrom = sdf.parse(dateFromStr);
-        Date dateTo = sdf.parse(dateToStr);
+        Date dateFrom;
+        Date dateTo;
+        try {
+            dateFrom = sdf.parse(dateFromStr);
+            dateTo = sdf.parse(dateToStr);
+        } catch(ParseException e){
+            dateFrom = new Date();
+            dateTo = new Date();
+        }
 
         ArrayList<Task> result = new ArrayList<Task>();
 
