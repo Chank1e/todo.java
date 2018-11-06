@@ -1,4 +1,4 @@
-package Entities;
+package domain.entity;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -6,7 +6,7 @@ import java.util.Date;
 import java.util.Locale;
 import java.util.UUID;
 
-public class Task {
+class Task {
     private UUID id;
     private String name;
     private String description;
@@ -37,6 +37,10 @@ public class Task {
 
     public String getName() {
         return name;
+    }
+
+    public UUID getId() {
+        return id;
     }
 
     private void setDeadline(String deadline) {

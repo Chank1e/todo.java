@@ -1,9 +1,8 @@
-package Entities;
+package domain.entity;
 
 import java.util.ArrayList;
-import java.util.List;
 
-public class TaskBoard {
+class TaskBoard {
     private String name;
     private ArrayList<TaskList> lists = new ArrayList<TaskList>();
 

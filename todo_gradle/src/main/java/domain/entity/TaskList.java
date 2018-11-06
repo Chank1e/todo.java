@@ -1,16 +1,13 @@
-package Entities;
+package domain.entity;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.Locale;
-import java.util.UUID;
+import java.util.*;
 
-public class TaskList {
+class TaskList {
     private UUID id;
     private String name;
-    private ArrayList<Task> tasks = new ArrayList<Task>();
+    private List<Task> tasks = new ArrayList<Task>();
 
     private static String _defaultDateFormat = "dd-MM-yyyy";
 
@@ -33,15 +30,19 @@ public class TaskList {
         return name;
     }
 
+    public UUID getId() {
+        return id;
+    }
+
     public void addTask(Task task) {
         tasks.add(task);
     }
 
-    public ArrayList<Task> getTasks() {
+    public List<Task> getTasks() {
         return new ArrayList<Task>(tasks);
     }
 
-    public ArrayList<Task> getTasksInRange(String dateFromStr, String dateToStr) {
+    public List<Task> getTasksInRange(String dateFromStr, String dateToStr) {
         SimpleDateFormat sdf = new SimpleDateFormat(_defaultDateFormat, Locale.getDefault());
         Date dateFrom;
         Date dateTo;
@@ -53,7 +54,7 @@ public class TaskList {
             dateTo = new Date();
         }
 
-        ArrayList<Task> result = new ArrayList<Task>();
+        List<Task> result = new ArrayList<Task>();
 
         for(Task task: tasks) {
             if(!(task.getDeadline().before(dateFrom) || task.getDeadline().after(dateTo))){
