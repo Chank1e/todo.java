@@ -1,21 +1,20 @@
 package View;
 
-import Entities.Task;
-import Entities.TaskBoard;
-import Entities.TaskList;
-import Model.TaskState;
+import domain.entity.Task;
+import domain.entity.TaskBoard;
+import domain.entity.TaskList;
+import Model.State;
 
-import java.text.ParseException;
 import java.util.HashMap;
 import java.util.Map;
 
-import Listeners.Listener;
+import ui.listeners.Listener;
 
-public class App extends Listener{
-    private TaskState state = new TaskState();
+public class App implements Listener {
+    private State state = new State();
 
     public void init(){
-        state.addEventListenet(this);
+        state.addListener(this);
         this.mockState();
     }
 
@@ -38,7 +37,7 @@ public class App extends Listener{
         state.setState(tmpState); // Обновляем state. После обновления сработает коллбэк
     }
 
-    @Override
+
     public void update(){
         System.out.println("Updated!");
     }
