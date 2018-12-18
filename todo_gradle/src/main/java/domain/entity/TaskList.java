@@ -4,7 +4,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-class TaskList {
+public class TaskList {
     private UUID id;
     private String name;
     private List<Task> tasks = new ArrayList<Task>();

@@ -1,12 +1,13 @@
 package domain.entity;
 
+import sequelize.*;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 import java.util.UUID;
 
-class Task {
+public class Task {
     private UUID id;
     private String name;
     private String description;

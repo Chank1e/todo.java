@@ -2,7 +2,7 @@ package domain.entity;
 
 import java.util.ArrayList;
 
-class TaskBoard {
+public class TaskBoard {
     private String name;
     private ArrayList<TaskList> lists = new ArrayList<TaskList>();
 
